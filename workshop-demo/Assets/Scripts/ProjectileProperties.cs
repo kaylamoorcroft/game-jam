@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class ProjectileProperties : MonoBehaviour
 {
-    [SerializeField] int damage;
+    public int damage = 5;
 
     private void FixedUpdate()
     {
         onCollisionEnter();
     }
 
-    void onCollisionEnter()
+     public void onCollisionEnter()
     {
-        var collider = Physics2D.OverlapCircle(transform.position, 0.1f, GameLayers.i.TerrainLayer);
-        if(collider != null)
+        var collider = Physics2D.OverlapCircle(transform.position, 0.1f,GameLayers.i.TerrainLayer);
+        if (collider != null) //Destory on collision with border
         {
             Debug.Log("hit border");
             Destroy(gameObject);

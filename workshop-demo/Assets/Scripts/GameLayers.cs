@@ -20,12 +20,12 @@ public class GameLayers : MonoBehaviour
         get => terrain;
     }
 
-    public LayerMask PlayerBulletLayer
+    public LayerMask PlayerBullet
     {
         get => playerBullet;
     }
 
-    public LayerMask EnemyLayer
+    public LayerMask Enemy
     {
         get => enemy;
     }
