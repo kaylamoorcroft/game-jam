@@ -11,12 +11,14 @@ public class PlayerController : MonoBehaviour
     Vector2 movement;
     float shootCooldown;
     [SerializeField] private GameObject restartButton;
+    Animator animator;
 
 
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         currentMoveSpeed = moveSpeed;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -40,6 +42,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = new Vector2(movement.x, rb.velocity.y);
+
+        animator.SetFloat("MovementDirection", movement.x);
 
         if (shootCooldown > 0)
         {
