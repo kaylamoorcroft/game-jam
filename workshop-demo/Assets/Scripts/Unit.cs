@@ -9,6 +9,7 @@ public class Unit : MonoBehaviour
     [SerializeField] int health;
     [SerializeField] int dmgOnContact;
     bool dying = false;
+
     float radius = 1f;
     int frames = 0;
     float hitcoolDown = 0;
@@ -64,12 +65,15 @@ public class Unit : MonoBehaviour
 
     void TakeDamage(int damage)
     {
+        Debug.Log("hit");
         health -= damage;
         if(health <= 0) 
             dying = true;
-        else
-            hitcoolDown = 0.5f;
+        
+        hitcoolDown = 0.5f;
     }
 
     public int GetHealth() { return health; }
+
+    public bool GetDying() { return dying; }
 }
