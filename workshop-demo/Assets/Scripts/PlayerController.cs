@@ -14,12 +14,20 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
 
+    [SerializeField] private AudioSource playerAudio;
+    [SerializeField] private AudioClip shootSound;
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip spawnSound;
+
 
     public void Start()
     {
+        if (!playerAudio) { playerAudio = GetComponent<AudioSource>(); }
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         currentMoveSpeed = moveSpeed;
+
+        playerAudio.PlayOneShot(spawnSound, 1f);
     }
 
     void Update()
@@ -36,8 +44,7 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetMouseButton(0) && shootCooldown <= 0)
             {
-                GetComponentInChildren<ProjectileSpawner>().SpawnProjectile();
-                shootCooldown = 0.25f;
+                Shoot();
             }
         }
     }
@@ -65,9 +72,17 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
+        playerAudio.PlayOneShot(jumpSound, 1f);
         Debug.Log(Vector2.up * jumpAmount);
         rb.velocity = new Vector2(rb.velocity.x, 0f);
         rb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
+    }
+
+    private void Shoot()
+    {
+        playerAudio.PlayOneShot(shootSound, 1f);
+        GetComponentInChildren<ProjectileSpawner>().SpawnProjectile();
+        shootCooldown = 0.25f;
     }
 
     void OnDestroy()

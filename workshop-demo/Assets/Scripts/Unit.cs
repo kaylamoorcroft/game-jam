@@ -16,8 +16,13 @@ public class Unit : MonoBehaviour
     float blinkSpeed = 0.05f;
     SpriteRenderer sp;
 
+    [SerializeField] AudioSource unitAudio;
+    [SerializeField] AudioClip takeDamageSound;
+    [SerializeField] AudioClip deathSound;
+
     public void Start()
     {
+        if (!unitAudio) { unitAudio = GetComponent<AudioSource>(); }
         sp = GetComponent<SpriteRenderer>();
     }
 
@@ -67,9 +72,15 @@ public class Unit : MonoBehaviour
     {
         Debug.Log("hit");
         health -= damage;
-        if(health <= 0) 
+        if(health <= 0)
+        {
             dying = true;
-        
+            unitAudio.PlayOneShot(deathSound, 1f);   
+        }
+        else
+        {
+            unitAudio.PlayOneShot(takeDamageSound, 1f);
+        }        
         hitcoolDown = 0.5f;
     }
 
