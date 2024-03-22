@@ -10,10 +10,10 @@ public class PlayerController : MonoBehaviour
     float currentMoveSpeed;
     Vector2 movement;
     float shootCooldown;
+    bool onGround;
     [SerializeField] private GameObject restartButton;
 
     Animator animator;
-
     [SerializeField] private AudioSource playerAudio;
     [SerializeField] private AudioClip shootSound;
     [SerializeField] private AudioClip jumpSound;
@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         currentMoveSpeed = moveSpeed;
+        onGround = true;
 
         playerAudio.PlayOneShot(spawnSound, 1f);
     }
@@ -47,6 +48,7 @@ public class PlayerController : MonoBehaviour
                 Shoot();
             }
         }
+
     }
 
     // Use FixedUpdate as it is executed on a fixed timer (default = 50times/second)
@@ -72,10 +74,14 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        playerAudio.PlayOneShot(jumpSound, 1f);
-        Debug.Log(Vector2.up * jumpAmount);
-        rb.velocity = new Vector2(rb.velocity.x, 0f);
-        rb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
+        if (onGround)
+        {
+            onGround = false;
+            playerAudio.PlayOneShot(jumpSound, 1f);
+            Debug.Log(Vector2.up * jumpAmount);
+            rb.velocity = new Vector2(rb.velocity.x, 0f);
+            rb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
+        }
     }
 
     private void Shoot()
@@ -90,6 +96,13 @@ public class PlayerController : MonoBehaviour
         if (restartButton != null)
         {
             restartButton.SetActive(true);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 7) // terrain
+        {
+            onGround = true;
         }
     }
 }

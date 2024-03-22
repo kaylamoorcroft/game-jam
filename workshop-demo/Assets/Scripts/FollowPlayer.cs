@@ -30,6 +30,10 @@ public class FollowPlayer : MonoBehaviour
             {
                 newCameraPos.y += offsetY; // camera should be higher than usual by offset amount, otherwise, in middle of screen
             }
+            else if (playerPosition.y > 2.5) // if higher, move camera down
+            {
+                newCameraPos.y -= offsetY;
+            }
             newCameraPos.x += offsetX;
             newCameraPos.z = -10f;
             transform.position = Vector3.Lerp(transform.position, newCameraPos, smoothing * Time.deltaTime);
