@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
   m_Name: Fire
   m_EditorClassIdentifier: 
-  m_AnimatedSprites: []
+  m_AnimatedSprites:
+  - {fileID: 21300042, guid: ffc5a3f5b6234044e87e556883d205d0, type: 3}
+  - {fileID: 21300044, guid: ffc5a3f5b6234044e87e556883d205d0, type: 3}
+  - {fileID: 21300046, guid: ffc5a3f5b6234044e87e556883d205d0, type: 3}
+  - {fileID: 21300048, guid: ffc5a3f5b6234044e87e556883d205d0, type: 3}
+  - {fileID: 21300050, guid: ffc5a3f5b6234044e87e556883d205d0, type: 3}
+  - {fileID: 21300052, guid: ffc5a3f5b6234044e87e556883d205d0, type: 3}
   m_MinSpeed: 1
   m_MaxSpeed: 1
   m_AnimationStartTime: 0
