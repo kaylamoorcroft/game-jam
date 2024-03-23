@@ -6,11 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5.0f;
     [SerializeField] float jumpAmount = 30f;
+    [SerializeField] int groundLayer;
     Rigidbody2D rb;
-    float currentMoveSpeed;
     Vector2 movement;
     float shootCooldown;
     bool onGround;
+    float currentMoveSpeed;
     [SerializeField] private GameObject restartButton;
 
     Animator animator;
@@ -62,8 +63,7 @@ public class PlayerController : MonoBehaviour
 
         if(rb.velocity.x < 0)
             transform.localScale = new Vector3(-1, 1, 1);
-
-        if(rb.velocity.x > 0)
+        else if(rb.velocity.x > 0)
             transform.localScale = new Vector3(1, 1, 1);
 
         if (shootCooldown > 0)
@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 7) // terrain
+        if (collision.gameObject.layer == groundLayer)
         {
             onGround = true;
         }
