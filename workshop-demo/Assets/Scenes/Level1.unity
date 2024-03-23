@@ -9730,7 +9730,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   jumpAmount: 25
-  slopeCheckDistance: 0.5
   restartButton: {fileID: 143090922}
   playerAudio: {fileID: 1880233234}
   shootSound: {fileID: 8300000, guid: 21215457a83056a4d8eefa923482a345, type: 3}
