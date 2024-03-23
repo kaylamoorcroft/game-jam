@@ -1,97 +1,82 @@
 fileFormatVersion: 2
-guid: f51c40299c6f2c4438629191492adad6
+guid: dbe89f57c63ef4920991d7a1b6382bd7
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: bg_cave_blueish_16x32_0
+    second: scorpion-red-sheet-x1_0
   - first:
       213: 21300002
-    second: bg_cave_blueish_16x32_1
+    second: scorpion-red-sheet-x1_1
   - first:
       213: 21300004
-    second: bg_cave_blueish_16x32_2
+    second: scorpion-red-sheet-x1_2
   - first:
       213: 21300006
-    second: bg_cave_blueish_16x32_3
+    second: scorpion-red-sheet-x1_3
   - first:
       213: 21300008
-    second: bg_cave_blueish_16x32_4
+    second: scorpion-red-sheet-x1_4
   - first:
       213: 21300010
-    second: bg_cave_blueish_16x32_5
+    second: scorpion-red-sheet-x1_5
   - first:
       213: 21300012
-    second: bg_cave_blueish_16x32_6
+    second: scorpion-red-sheet-x1_6
   - first:
       213: 21300014
-    second: bg_cave_blueish_16x32_7
+    second: scorpion-red-sheet-x1_7
   - first:
       213: 21300016
-    second: bg_cave_blueish_16x32_8
+    second: scorpion-red-sheet-x1_8
   - first:
       213: 21300018
-    second: bg_cave_blueish_16x32_9
+    second: scorpion-red-sheet-x1_9
   - first:
       213: 21300020
-    second: bg_cave_blueish_16x32_10
+    second: scorpion-red-sheet-x1_10
   - first:
       213: 21300022
-    second: bg_cave_blueish_16x32_11
+    second: scorpion-red-sheet-x1_11
   - first:
       213: 21300024
-    second: bg_cave_blueish_16x32_12
+    second: scorpion-red-sheet-x1_12
   - first:
       213: 21300026
-    second: bg_cave_blueish_16x32_13
+    second: scorpion-red-sheet-x1_13
   - first:
       213: 21300028
-    second: bg_cave_blueish_16x32_14
+    second: scorpion-red-sheet-x1_14
   - first:
       213: 21300030
-    second: bg_cave_blueish_16x32_15
+    second: scorpion-red-sheet-x1_15
   - first:
       213: 21300032
-    second: bg_cave_blueish_16x32_16
+    second: scorpion-red-sheet-x1_16
   - first:
       213: 21300034
-    second: bg_cave_blueish_16x32_17
+    second: scorpion-red-sheet-x1_17
   - first:
       213: 21300036
-    second: bg_cave_blueish_16x32_18
+    second: scorpion-red-sheet-x1_18
   - first:
       213: 21300038
-    second: bg_cave_blueish_16x32_19
+    second: scorpion-red-sheet-x1_19
   - first:
       213: 21300040
-    second: bg_cave_blueish_16x32_20
+    second: scorpion-red-sheet-x1_20
   - first:
       213: 21300042
-    second: bg_cave_blueish_16x32_21
+    second: scorpion-red-sheet-x1_21
   - first:
       213: 21300044
-    second: bg_cave_blueish_16x32_22
+    second: scorpion-red-sheet-x1_22
   - first:
       213: 21300046
-    second: bg_cave_blueish_16x32_23
+    second: scorpion-red-sheet-x1_23
   - first:
       213: 21300048
-    second: bg_cave_blueish_16x32_24
-  - first:
-      213: 21300050
-    second: bg_cave_blueish_16x32_25
-  - first:
-      213: 21300052
-    second: bg_cave_blueish_16x32_26
-  - first:
-      213: 21300054
-    second: bg_cave_blueish_16x32_27
-  - first:
-      213: 21300056
-    second: bg_cave_blueish_16x32_28
-  - first:
-      213: 21300058
-    second: bg_cave_blueish_16x32_29
+    second: scorpion-red-sheet-x1_24
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -239,13 +224,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_0
+      name: scorpion-red-sheet-x1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
+        y: 64
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,13 +245,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_1
+      name: scorpion-red-sheet-x1_1
       rect:
         serializedVersion: 2
         x: 16
-        y: 224
+        y: 64
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,13 +266,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_2
+      name: scorpion-red-sheet-x1_2
       rect:
         serializedVersion: 2
         x: 32
-        y: 224
+        y: 64
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,13 +287,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_3
+      name: scorpion-red-sheet-x1_3
       rect:
         serializedVersion: 2
         x: 48
-        y: 224
+        y: 64
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,13 +308,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_4
+      name: scorpion-red-sheet-x1_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
+        x: 64
+        y: 64
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,13 +329,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_5
+      name: scorpion-red-sheet-x1_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 192
+        x: 80
+        y: 64
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,13 +350,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_6
+      name: scorpion-red-sheet-x1_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
+        x: 0
+        y: 48
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,13 +371,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_7
+      name: scorpion-red-sheet-x1_7
       rect:
         serializedVersion: 2
-        x: 48
-        y: 192
+        x: 16
+        y: 48
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,13 +392,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_8
+      name: scorpion-red-sheet-x1_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
+        x: 32
+        y: 48
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,13 +413,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_9
+      name: scorpion-red-sheet-x1_9
       rect:
         serializedVersion: 2
-        x: 16
-        y: 160
+        x: 48
+        y: 48
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,13 +434,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_10
+      name: scorpion-red-sheet-x1_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
+        x: 0
+        y: 32
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,13 +455,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_11
+      name: scorpion-red-sheet-x1_11
       rect:
         serializedVersion: 2
-        x: 48
-        y: 160
+        x: 16
+        y: 32
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,13 +476,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_12
+      name: scorpion-red-sheet-x1_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 32
+        y: 32
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,13 +497,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_13
+      name: scorpion-red-sheet-x1_13
       rect:
         serializedVersion: 2
-        x: 16
-        y: 128
+        x: 48
+        y: 32
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,13 +518,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_14
+      name: scorpion-red-sheet-x1_14
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
+        x: 64
+        y: 32
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,13 +539,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_15
+      name: scorpion-red-sheet-x1_15
       rect:
         serializedVersion: 2
-        x: 48
-        y: 128
+        x: 0
+        y: 16
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,13 +560,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_16
+      name: scorpion-red-sheet-x1_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 16
+        y: 16
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,13 +581,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_17
+      name: scorpion-red-sheet-x1_17
       rect:
         serializedVersion: 2
-        x: 16
-        y: 96
+        x: 32
+        y: 16
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,13 +602,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_18
+      name: scorpion-red-sheet-x1_18
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 0
+        y: 0
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,13 +623,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_19
+      name: scorpion-red-sheet-x1_19
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
+        x: 16
+        y: 0
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,13 +644,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_20
+      name: scorpion-red-sheet-x1_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 32
+        y: 0
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,13 +665,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_21
+      name: scorpion-red-sheet-x1_21
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 48
+        y: 0
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,13 +686,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_22
+      name: scorpion-red-sheet-x1_22
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 64
+        y: 0
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,13 +707,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_23
+      name: scorpion-red-sheet-x1_23
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
+        x: 80
+        y: 0
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -743,13 +728,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_cave_blueish_16x32_24
+      name: scorpion-red-sheet-x1_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 96
+        y: 0
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -759,111 +744,6 @@ TextureImporter:
       bones: []
       spriteID: 05305410000000000800000000000000
       internalID: 21300048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bg_cave_blueish_16x32_25
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25305410000000000800000000000000
-      internalID: 21300050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bg_cave_blueish_16x32_26
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 45305410000000000800000000000000
-      internalID: 21300052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bg_cave_blueish_16x32_27
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 65305410000000000800000000000000
-      internalID: 21300054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bg_cave_blueish_16x32_28
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 85305410000000000800000000000000
-      internalID: 21300056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bg_cave_blueish_16x32_29
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a5305410000000000800000000000000
-      internalID: 21300058
       vertices: []
       indices: 
       edges: []
@@ -879,36 +759,31 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bg_cave_blueish_16x32_0: 21300000
-      bg_cave_blueish_16x32_1: 21300002
-      bg_cave_blueish_16x32_10: 21300020
-      bg_cave_blueish_16x32_11: 21300022
-      bg_cave_blueish_16x32_12: 21300024
-      bg_cave_blueish_16x32_13: 21300026
-      bg_cave_blueish_16x32_14: 21300028
-      bg_cave_blueish_16x32_15: 21300030
-      bg_cave_blueish_16x32_16: 21300032
-      bg_cave_blueish_16x32_17: 21300034
-      bg_cave_blueish_16x32_18: 21300036
-      bg_cave_blueish_16x32_19: 21300038
-      bg_cave_blueish_16x32_2: 21300004
-      bg_cave_blueish_16x32_20: 21300040
-      bg_cave_blueish_16x32_21: 21300042
-      bg_cave_blueish_16x32_22: 21300044
-      bg_cave_blueish_16x32_23: 21300046
-      bg_cave_blueish_16x32_24: 21300048
-      bg_cave_blueish_16x32_25: 21300050
-      bg_cave_blueish_16x32_26: 21300052
-      bg_cave_blueish_16x32_27: 21300054
-      bg_cave_blueish_16x32_28: 21300056
-      bg_cave_blueish_16x32_29: 21300058
-      bg_cave_blueish_16x32_3: 21300006
-      bg_cave_blueish_16x32_4: 21300008
-      bg_cave_blueish_16x32_5: 21300010
-      bg_cave_blueish_16x32_6: 21300012
-      bg_cave_blueish_16x32_7: 21300014
-      bg_cave_blueish_16x32_8: 21300016
-      bg_cave_blueish_16x32_9: 21300018
+      scorpion-red-sheet-x1_0: 21300000
+      scorpion-red-sheet-x1_1: 21300002
+      scorpion-red-sheet-x1_10: 21300020
+      scorpion-red-sheet-x1_11: 21300022
+      scorpion-red-sheet-x1_12: 21300024
+      scorpion-red-sheet-x1_13: 21300026
+      scorpion-red-sheet-x1_14: 21300028
+      scorpion-red-sheet-x1_15: 21300030
+      scorpion-red-sheet-x1_16: 21300032
+      scorpion-red-sheet-x1_17: 21300034
+      scorpion-red-sheet-x1_18: 21300036
+      scorpion-red-sheet-x1_19: 21300038
+      scorpion-red-sheet-x1_2: 21300004
+      scorpion-red-sheet-x1_20: 21300040
+      scorpion-red-sheet-x1_21: 21300042
+      scorpion-red-sheet-x1_22: 21300044
+      scorpion-red-sheet-x1_23: 21300046
+      scorpion-red-sheet-x1_24: 21300048
+      scorpion-red-sheet-x1_3: 21300006
+      scorpion-red-sheet-x1_4: 21300008
+      scorpion-red-sheet-x1_5: 21300010
+      scorpion-red-sheet-x1_6: 21300012
+      scorpion-red-sheet-x1_7: 21300014
+      scorpion-red-sheet-x1_8: 21300016
+      scorpion-red-sheet-x1_9: 21300018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
