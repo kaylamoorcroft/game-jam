@@ -12,7 +12,11 @@ public class PlayerController : MonoBehaviour
     float shootCooldown;
     bool onGround;
     float currentMoveSpeed;
+    bool hitEnemy;
     [SerializeField] private GameObject restartButton;
+    [SerializeField] public GameObject attackPoint;
+    [SerializeField] public float radius;
+    [SerializeField] public LayerMask enemyLayer;
 
     Animator animator;
     [SerializeField] private AudioSource playerAudio;
@@ -37,16 +41,16 @@ public class PlayerController : MonoBehaviour
         //Debug.Log(movement);
         //Vector2(x,y)
         //when A or Left is held, x = -1 if D or Right is held, x = 1 else x = 0
-        if(!GameController.i.isPaused)
+        if (!GameController.i.isPaused)
         {
             movement.x = Input.GetAxisRaw("Horizontal") * moveSpeed;
 
             if (Input.GetKeyDown(KeyCode.W))
                 Jump();
 
-            if (Input.GetMouseButton(0) && shootCooldown <= 0)
+            if (Input.GetMouseButton(0))
             {
-                Shoot();
+                animator.SetBool("isAttacking", true);
             }
         }
 
@@ -61,15 +65,15 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("JumpHeight", rb.velocity.y);
         animator.SetBool("Paused", GameController.i.isPaused);
 
-        if(rb.velocity.x < 0)
+        if (rb.velocity.x < 0)
             transform.localScale = new Vector3(-1, 1, 1);
-        else if(rb.velocity.x > 0)
+        else if (rb.velocity.x > 0)
             transform.localScale = new Vector3(1, 1, 1);
-
+        /*
         if (shootCooldown > 0)
         {
             shootCooldown -= Time.fixedDeltaTime;
-        }
+        }*/
     }
 
     void Jump()
@@ -84,11 +88,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Shoot()
+    public void EndAttack()
     {
-        playerAudio.PlayOneShot(shootSound, 1f);
-        GetComponentInChildren<ProjectileSpawner>().SpawnProjectile();
-        shootCooldown = 0.25f;
+        animator.SetBool("isAttacking", false);
+    }
+
+    public Collider2D Attack()
+    {
+        Collider2D enemy = Physics2D.OverlapCircle(attackPoint.transform.position, radius, enemyLayer);
+
+        if (enemy)
+        {
+            Debug.Log("Hit enemy");
+            hitEnemy = true;
+        }
+        else { hitEnemy = false; }
+        return enemy;
     }
 
     void OnDestroy()
@@ -104,5 +119,16 @@ public class PlayerController : MonoBehaviour
         {
             onGround = true;
         }
+    }
+    // just to see where spear would hit
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
+    }
+
+    public bool HitEnemy
+    {
+        get { return hitEnemy; }
     }
 }

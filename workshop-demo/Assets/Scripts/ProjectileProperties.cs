@@ -13,7 +13,7 @@ public class ProjectileProperties : MonoBehaviour
 
      public void onCollisionEnter()
     {
-        var collider = Physics2D.OverlapCircle(transform.position, 0.1f,GameLayers.i.TerrainLayer);
+        var collider = Physics2D.OverlapCircle(transform.position, 0.3f,GameLayers.i.TerrainLayer);
         if (collider != null) //Destory on collision with border
         {
             Debug.Log("hit border");
