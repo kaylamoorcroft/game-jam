@@ -459,9 +459,9 @@ MonoBehaviour:
   terrain:
     serializedVersion: 2
     m_Bits: 128
-  playerBullet:
+  ground:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1024
   enemy:
     serializedVersion: 2
     m_Bits: 256
@@ -929,7 +929,7 @@ PrefabInstance:
       objectReference: {fileID: 1880233226}
     - target: {fileID: 472606596917432894, guid: 8958b80be997dc9448c0b36ee990ace3, type: 3}
       propertyPath: dmgDealt
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3318525779251103584, guid: 8958b80be997dc9448c0b36ee990ace3, type: 3}
       propertyPath: m_Name
@@ -9338,7 +9338,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7357949191015451789, guid: 0929df83c950fe6499a0916e19f02767, type: 2}
-  m_audioClip: {fileID: 8300000, guid: b2a27fdcbe978524d8748023e4ba435b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 00cf98ecdb5d447fb89aebbfa7e412f5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -9571,17 +9571,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   jumpAmount: 25
-  groundLayer: 10
   restartButton: {fileID: 143090922}
   attackPoint: {fileID: 1946799097}
   radius: 0.6
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 256
   playerAudio: {fileID: 1880233234}
-  shootSound: {fileID: 8300000, guid: 21215457a83056a4d8eefa923482a345, type: 3}
-  jumpSound: {fileID: 8300000, guid: ee5f4383ef0d89f4395bffdd8c4512ac, type: 3}
-  spawnSound: {fileID: 8300000, guid: c9f3b1a001684684bb2fcf265d2a2a9d, type: 3}
+  jumpSound: {fileID: 8300000, guid: 7d12b8ffc45a795419fd6cbe363addd4, type: 3}
 --- !u!114 &1880233232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9595,11 +9589,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
-  dmgDealt: 5
+  dmgDealt: 3
   player: {fileID: 1880233226}
   unitAudio: {fileID: 1880233234}
-  takeDamageSound: {fileID: 8300000, guid: 52636c920fb71c34e85b76e929244eff, type: 3}
-  deathSound: {fileID: 8300000, guid: afbcef4ec1fd85b45bfe4a8ffe3ccbe7, type: 3}
+  takeDamageSound: {fileID: 8300000, guid: 2d07eba8eab06cb45898cb11da4a54e2, type: 3}
+  deathSound: {fileID: 8300000, guid: 38409f9445b30cf4c8071a75e5a423f3, type: 3}
 --- !u!95 &1880233233
 Animator:
   serializedVersion: 5

@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5.0f;
     [SerializeField] float jumpAmount = 30f;
-    [SerializeField] int groundLayer;
     Rigidbody2D rb;
     Vector2 movement;
     float shootCooldown;
@@ -16,13 +15,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject restartButton;
     [SerializeField] public GameObject attackPoint;
     [SerializeField] public float radius;
-    [SerializeField] public LayerMask enemyLayer;
 
     Animator animator;
     [SerializeField] private AudioSource playerAudio;
-    [SerializeField] private AudioClip shootSound;
     [SerializeField] private AudioClip jumpSound;
-    [SerializeField] private AudioClip spawnSound;
 
 
     public void Start()
@@ -32,8 +28,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentMoveSpeed = moveSpeed;
         onGround = true;
-
-        playerAudio.PlayOneShot(spawnSound, 1f);
     }
 
     void Update()
@@ -91,11 +85,12 @@ public class PlayerController : MonoBehaviour
     public void EndAttack()
     {
         animator.SetBool("isAttacking", false);
+        hitEnemy = false;
     }
 
     public Collider2D Attack()
     {
-        Collider2D enemy = Physics2D.OverlapCircle(attackPoint.transform.position, radius, enemyLayer);
+        Collider2D enemy = Physics2D.OverlapCircle(attackPoint.transform.position, radius, GameLayers.i.Enemy);
 
         if (enemy)
         {
@@ -115,7 +110,7 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == groundLayer)
+        if (collision.gameObject.layer == 10) // ground layer
         {
             onGround = true;
         }

@@ -44,7 +44,7 @@ public class Unit : MonoBehaviour
         {
             if (gameObject.CompareTag("Enemy") && player.GetComponent<PlayerController>().HitEnemy)
             {
-                TakeDamage(dmgDealt);
+                TakeDamage(player.GetComponent<Unit>().dmgDealt);
             }
             var collider2 = Physics2D.OverlapCircle(transform.position, radius, GameLayers.i.Enemy);
             if (collider2 != null && gameObject.tag == "Player")

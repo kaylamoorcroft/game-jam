@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameLayers : MonoBehaviour
 {
     [SerializeField] LayerMask terrain;
-    [SerializeField] LayerMask playerBullet;
+    [SerializeField] LayerMask ground;
     [SerializeField] LayerMask enemy;
 
     public static GameLayers i { get; set; }
@@ -20,9 +20,9 @@ public class GameLayers : MonoBehaviour
         get => terrain;
     }
 
-    public LayerMask PlayerBullet
+    public int GroundLayer
     {
-        get => playerBullet;
+        get => ground;
     }
 
     public LayerMask Enemy

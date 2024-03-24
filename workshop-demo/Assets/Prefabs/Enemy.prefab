@@ -156,11 +156,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  dmgDealt: 3
+  dmgDealt: 1
   player: {fileID: 0}
   unitAudio: {fileID: 2119456027452872541}
-  takeDamageSound: {fileID: 8300000, guid: ca6211651f0cd1345ad9555dec1ccd4c, type: 3}
-  deathSound: {fileID: 8300000, guid: 79fa96ff12b37b546a548a654cf722a0, type: 3}
+  takeDamageSound: {fileID: 8300000, guid: e82879725b40ce444bca27d19a75f42c, type: 3}
+  deathSound: {fileID: 8300000, guid: 2ee71cfc2c8d7334abb8ad72203c0068, type: 3}
 --- !u!95 &8591541959477399593
 Animator:
   serializedVersion: 5
