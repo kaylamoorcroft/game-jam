@@ -37,18 +37,21 @@ public class Unit : MonoBehaviour
             if (frames == 25)
             {
                 Destroy(gameObject);
+                Debug.Log(gameObject.name + " died...");
                 frames = 0;
             }
         }
         if (hitcoolDown <= 0) 
         {
-            var collider = Physics2D.OverlapCircle(player.GetComponent<PlayerController>().attackPoint.transform.position, player.GetComponent<PlayerController>().radius, GameLayers.i.Enemy);
+            /*
+            var collider = player.GetComponent<PlayerController>().Attack();
+            //var collider = Physics2D.OverlapCircle(player.GetComponent<PlayerController>().attackPoint.transform.position, player.GetComponent<PlayerController>().radius, GameLayers.i.Enemy);
             if (collider != null && gameObject.CompareTag("Enemy") && player.GetComponent<PlayerController>().HitEnemy)
             {
                 TakeDamage(player.GetComponent<Unit>().dmgDealt);
-            }
+            }*/
             var collider2 = Physics2D.OverlapCircle(transform.position, radius, GameLayers.i.Enemy);
-            if (collider2 != null && gameObject.tag == "Player")
+            if (collider2 != null && gameObject.CompareTag("Player"))
             {
                 TakeDamage(collider2.GetComponent<Unit>().dmgDealt);
             }
@@ -67,10 +70,11 @@ public class Unit : MonoBehaviour
         hitcoolDown -= Time.deltaTime;
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
-        if(health <= 0)
+        Debug.Log(gameObject.name + " now has " + health + " health");
+        if (health <= 0)
         {
             dying = true;
             unitAudio.PlayOneShot(deathSound, 1f);   
@@ -83,6 +87,7 @@ public class Unit : MonoBehaviour
     }
 
     public int GetHealth() { return health; }
-
+    public int DmgDealt { get { return dmgDealt; } }
+    public float HitCooldown { get { return hitcoolDown; } }
     public bool GetDying() { return dying; }
 }

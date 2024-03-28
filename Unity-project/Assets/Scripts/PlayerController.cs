@@ -96,6 +96,12 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Hit enemy");
             hitEnemy = true;
+            Unit unitScript = enemy.gameObject.GetComponent<Unit>();
+            if (unitScript.HitCooldown <= 0)
+            {
+                int spearDamage = gameObject.GetComponent<Unit>().DmgDealt;
+                unitScript.TakeDamage(spearDamage);
+            }
         }
         else { hitEnemy = false; }
         return enemy;
@@ -116,7 +122,6 @@ public class PlayerController : MonoBehaviour
         }
     }
     // just to see where spear would hit
-
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
