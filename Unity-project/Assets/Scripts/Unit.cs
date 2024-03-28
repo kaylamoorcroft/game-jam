@@ -43,13 +43,7 @@ public class Unit : MonoBehaviour
         }
         if (hitcoolDown <= 0) 
         {
-            /*
-            var collider = player.GetComponent<PlayerController>().Attack();
-            //var collider = Physics2D.OverlapCircle(player.GetComponent<PlayerController>().attackPoint.transform.position, player.GetComponent<PlayerController>().radius, GameLayers.i.Enemy);
-            if (collider != null && gameObject.CompareTag("Enemy") && player.GetComponent<PlayerController>().HitEnemy)
-            {
-                TakeDamage(player.GetComponent<Unit>().dmgDealt);
-            }*/
+            sp.enabled = true;
             var collider2 = Physics2D.OverlapCircle(transform.position, radius, GameLayers.i.Enemy);
             if (collider2 != null && gameObject.CompareTag("Player"))
             {
